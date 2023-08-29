@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <!-- 针对IE的特殊配置 -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 开启移动端理想视口 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- base这里代表的就是public文件夹 -->
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <!-- 配置网页标签 -->
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <meta name="description" content="尚品汇购物平台-专业的网上购物商城">
+  <meta name="keywords" content="网上购物，手机，日常生活">
+
+  <!-- 引入清除默认的样式 -->
+  <link rel="stylesheet" href="./reset.css">
+  <!-- 引入图标样式 -->
+  <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4081148_1289pd53nea.css">
+</head>
+
+<body>
+  <!-- noscript是在页面不支持js才执行的语句 -->
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
